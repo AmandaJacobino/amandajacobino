@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Bot, Plug, Map, Monitor, Server } from 'lucide-react'
+import { Bot, Plug, Map, Monitor, Server, Code2 } from 'lucide-react'
 import { services } from '../data/services'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
@@ -9,6 +9,7 @@ const iconMap: Record<string, React.ElementType> = {
   Map,
   Monitor,
   Server,
+  Code2,
 }
 
 const containerVariants = {
@@ -29,7 +30,7 @@ export function Services() {
   const [ref, controls] = useScrollReveal()
 
   return (
-    <section id="servicos" className="py-32 px-6 bg-card">
+    <section id="servicos" className="py-32 px-6 bg-black">
       <div className="mx-auto max-w-6xl">
         <SectionHeader label="Serviços" />
 

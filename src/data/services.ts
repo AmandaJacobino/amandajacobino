@@ -36,4 +36,10 @@ export const services: Service[] = [
     description: 'APIs e servidores robustos com Python, Node.js e banco de dados SQL.',
     icon: 'Server',
   },
+  {
+    id: 6,
+    title: 'Google Apps Script',
+    description: 'Personalização do ambiente Google com código: automatize planilhas, formulários, Gmail e Drive com scripts customizados.',
+    icon: 'Code2',
+  },
 ]
