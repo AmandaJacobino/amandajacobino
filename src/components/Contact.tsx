@@ -38,7 +38,7 @@ export function Contact() {
   const [ref, controls] = useScrollReveal()
 
   return (
-    <section id="contato" className="py-32 px-6 bg-card">
+    <section id="contato" className="py-32 px-6 bg-white">
       <div className="mx-auto max-w-6xl">
         <SectionHeader label="Contato" />
 
@@ -51,14 +51,14 @@ export function Contact() {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-3xl font-light text-foreground mb-4"
+            className="text-3xl font-light text-gray-900 mb-4"
           >
             Vamos trabalhar juntos?
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
-            className="text-sm text-muted leading-relaxed mb-12"
+            className="text-sm text-gray-500 leading-relaxed mb-12"
           >
             Disponível para freelance, projetos e oportunidades. Entre em contato pelo canal de sua preferência.
           </motion.p>
@@ -70,9 +70,9 @@ export function Contact() {
                 href={href}
                 target={href.startsWith('mailto') ? undefined : '_blank'}
                 rel="noopener noreferrer"
-                className="group flex items-center gap-3 text-sm text-muted hover:text-foreground transition-colors duration-300"
+                className="group flex items-center gap-3 text-sm text-gray-500 hover:text-gray-900 transition-colors duration-300"
               >
-                <span className="w-8 h-8 flex items-center justify-center border border-border group-hover:border-accent/30 transition-colors duration-300 rounded-sm">
+                <span className="w-8 h-8 flex items-center justify-center border border-gray-200 group-hover:border-gray-400 transition-colors duration-300 rounded-sm">
                   <Icon size={14} />
                 </span>
                 {label}
@@ -88,8 +88,8 @@ export function Contact() {
 function SectionHeader({ label }: { label: string }) {
   return (
     <div className="flex items-center gap-4 mb-16">
-      <span className="text-xs tracking-[0.3em] text-muted uppercase">{label}</span>
-      <div className="flex-1 h-px bg-border" />
+      <span className="text-xs tracking-[0.3em] text-gray-400 uppercase">{label}</span>
+      <div className="flex-1 h-px bg-gray-200" />
     </div>
   )
 }
