@@ -28,25 +28,37 @@ export function About() {
           variants={containerVariants}
           initial="hidden"
           animate={controls}
-          className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+          className="grid grid-cols-1 md:grid-cols-2 items-center"
         >
           {/* Photo placeholder */}
-          <motion.div variants={itemVariants} className="flex justify-center md:justify-start">
-            <div className="w-64 h-64 rounded-full border border-border bg-card flex items-center justify-center">
-              <span className="text-xs text-muted tracking-widest">FOTO</span>
-            </div>
+          <motion.div variants={itemVariants} className="flex justify-center">
+            <img
+              src="/images/photo-about.webp"
+              alt="Amanda Jacobino"
+              className="w-80 h-80 rounded-full object-cover"
+            />
           </motion.div>
 
           {/* Bio */}
-          <motion.div variants={itemVariants} className="space-y-6">
+          <motion.div variants={itemVariants} className="space-y-5">
             <h2 className="text-3xl font-light text-foreground leading-snug">
-              Olá, sou a Amanda.
+              Olá, Mundo!
             </h2>
-            <p className="text-sm text-muted leading-relaxed">
-              Texto em breve — aqui você vai contar um pouco sobre sua trajetória, motivações e o que te levou ao desenvolvimento.
+
+            <p className="text-base text-muted leading-relaxed text-justify">
+              Sou desenvolvedora Full Stack, formada no curso de Análise e Desenvolvimento de Sistemas com experiência prática em React, Next.js, TypeScript, Node.js, Supabase, Tailwind CSS e automação com IA. Atuo como Analista de Suporte ao Cliente Jr na Stattus4, onde crio aplicações completas – do front-end responsivo à integração com APIs e geração de documentos PDF pixel-perfect.
             </p>
-            <p className="text-sm text-muted leading-relaxed">
-              Localizada em Sorocaba, SP — disponível para projetos remotos.
+
+            <p className="text-base text-muted leading-relaxed text-justify">
+              Tenho domínio em engenharia de prompts (zero-shot, few-shot, RAG, etc.) e desenvolvimento de agentes de IA. Fui 1º lugar individual no Bootcamp de IA da Stattus4, com um agente autônomo para detecção e correção de bugs.
+            </p>
+
+            <p className="text-base text-muted leading-relaxed text-justify">
+              Também desenvolvo landing pages para negócios locais, sempre pensando em SEO, design responsivo e conversão. Adoro unir lógica, criatividade e tecnologia para resolver problemas reais.
+            </p>
+
+            <p className="text-xs text-muted/60 leading-relaxed">
+              Localizada em Sorocaba, SP.
             </p>
           </motion.div>
         </motion.div>
