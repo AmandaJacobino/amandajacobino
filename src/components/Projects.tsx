@@ -42,7 +42,7 @@ export function Projects() {
               <div className="mb-8 overflow-visible">
                 {project.image ? (
                   <img
-                    src={project.image}
+                    src={`${import.meta.env.BASE_URL}${project.image}`}
                     alt={project.title}
                     className="w-full aspect-video object-cover rounded-xl shadow-2xl
                                group-hover:-translate-y-3 transition-transform duration-500 ease-out"
