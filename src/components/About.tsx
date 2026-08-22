@@ -33,7 +33,7 @@ export function About() {
           {/* Photo placeholder */}
           <motion.div variants={itemVariants} className="flex justify-center">
             <img
-              src="/images/photo-about.webp"
+              src={`${import.meta.env.BASE_URL}images/photo-about.webp`}
               alt="Amanda Jacobino"
               className="w-80 h-80 rounded-full object-cover"
             />
