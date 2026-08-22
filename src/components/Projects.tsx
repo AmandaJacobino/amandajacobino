@@ -75,7 +75,7 @@ export function Projects() {
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="text-xs font-mono text-gray-400 border border-gray-200 px-2.5 py-1 rounded-full"
+                      className="text-xs font-mono text-gray-600 bg-gray-100 border border-gray-300 hover:bg-gray-200 hover:border-gray-500 transition-all duration-300 px-2.5 py-1 rounded-full"
                     >
                       {tech}
                     </span>

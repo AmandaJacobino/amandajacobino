@@ -16,7 +16,7 @@ export const projects: Project[] = [
     stack: ['React 18', 'TypeScript', 'Vite', 'Tailwind CSS'],
     github: 'https://github.com/AmandaJacobino/ht-estetica-automotiva',
     live: 'https://ht-estetica-automotiva.vercel.app',
-    image: '/images/ht-estetica.png',
+    image: '/images/ht-estetica-automotiva.png',
   },
   {
     id: 2,
@@ -25,5 +25,14 @@ export const projects: Project[] = [
     stack: ['TypeScript', 'JavaScript', 'CSS'],
     github: 'https://github.com/AmandaJacobino/nathalia-studio',
     image: '/images/nathalia-studio.png',
+  },
+  {
+    id: 3,
+    title: 'Wesley Souza Tattoo',
+    description: 'Site para tatuador com portfólio de trabalhos, apresentação de estilos e contato. Projeto desenvolvido em colaboração.',
+    stack: ['Next.js', 'React', 'Tailwind CSS', 'CSS Customizado'],
+    github: 'https://github.com/seeyou-sites/wesleysouza-tattoo',
+    live: 'https://wesleysouza-tattoo.vercel.app',
+    image: '/images/wesley-tattoo.png',
   },
 ]
