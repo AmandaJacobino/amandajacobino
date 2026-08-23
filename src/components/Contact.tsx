@@ -60,7 +60,7 @@ export function Contact() {
           variants={containerVariants}
           initial="hidden"
           animate={controls}
-          className="grid grid-cols-1 md:grid-cols-2 gap-32 items-center justify-items-center"
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-32 items-center justify-items-center"
         >
           {/* Texto */}
           <div>
@@ -80,7 +80,7 @@ export function Contact() {
           </div>
 
           {/* Links — coluna direita */}
-          <motion.div variants={itemVariants} className="flex flex-col gap-4">
+          <motion.div variants={itemVariants} className="grid grid-cols-2 md:grid-cols-1 gap-4">
             {links.map(({ label, href, icon: Icon }) => (
               <a
                 key={label}

@@ -24,7 +24,7 @@ export const projects: Project[] = [
     description: 'Landing page para estúdio de beleza. Portfólio de serviços, galeria e agendamento via WhatsApp.',
     stack: ['TypeScript', 'JavaScript', 'CSS'],
     github: 'https://github.com/AmandaJacobino/nathalia-studio',
-    image: 'images/nathalia-studio.png',
+    image: 'images/natalia-studio.png',
   },
   {
     id: 3,
