@@ -28,7 +28,7 @@ export function About() {
           variants={containerVariants}
           initial="hidden"
           animate={controls}
-          className="grid grid-cols-1 md:grid-cols-2 items-center"
+          className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-0"
         >
           {/* Photo placeholder */}
           <motion.div variants={itemVariants} className="flex justify-center">
