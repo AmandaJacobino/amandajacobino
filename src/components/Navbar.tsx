@@ -94,7 +94,14 @@ export function Navbar() {
                   <a
                     href={link.href}
                     className="text-base text-muted hover:text-foreground transition-colors"
-                    onClick={() => setMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setMenuOpen(false)
+                      const id = link.href.replace('#', '')
+                      setTimeout(() => {
+                        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+                      }, 300)
+                    }}
                   >
                     {link.label}
                   </a>
